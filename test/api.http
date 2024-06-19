@@ -1,0 +1,58 @@
+GET http://localhost:3000/users
+
+### Usuario Comum
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Rodrigo",
+    "email": "rodrigo5@email.com",
+    "password": "123456"
+}
+
+### Usuario Partner
+POST http://localhost:3000/partners/users
+Content-Type: application/json
+
+{
+    "name": "Rodrigo",
+    "email": "rodrigo6@email.com",
+    "password": "123456"
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "rodrigo6@email.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3000/partners
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IlJvZHJpZ28iLCJlbWFpbCI6InJvZHJpZ282QGVtYWlsLmNvbSIsInJvbGVzIjpbIlBBUlRORVIiXSwiY3JlYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxOTowNi4xNjZaIiwidXBkYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxOTowNi4xNjZaIiwiaWF0IjoxNzE4ODI0NzUzLCJleHAiOjE3MTg4MzQ3NTN9.wvTAawCtZ6qXPT4AboK7xmp8v0iZVhyT4-BfycmkFcU
+
+{
+    "name": "partner 2"
+}
+
+###
+GET http://localhost:3000/partners
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IlJvZHJpZ28iLCJlbWFpbCI6InJvZHJpZ282QGVtYWlsLmNvbSIsInJvbGVzIjpbIlBBUlRORVIiXSwiY3JlYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxOTowNi4xNjZaIiwidXBkYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxOTowNi4xNjZaIiwiaWF0IjoxNzE4ODI0NzUzLCJleHAiOjE3MTg4MzQ3NTN9.wvTAawCtZ6qXPT4AboK7xmp8v0iZVhyT4-BfycmkFcU
+
+###
+POST http://localhost:3000/events
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IlJvZHJpZ28iLCJlbWFpbCI6InJvZHJpZ282QGVtYWlsLmNvbSIsInJvbGVzIjpbIlBBUlRORVIiXSwiY3JlYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxOTowNi4xNjZaIiwidXBkYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxOTowNi4xNjZaIiwiaWF0IjoxNzE4ODI0NzUzLCJleHAiOjE3MTg4MzQ3NTN9.wvTAawCtZ6qXPT4AboK7xmp8v0iZVhyT4-BfycmkFcU
+Content-Type: application/json
+
+{
+    "name": "Evento 2",
+    "description": "Evento 2",
+    "date": "2024-06-12T23:21:34.60"
+}
+
+###
+GET http://localhost:3000/events
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IlJvZHJpZ28iLCJlbWFpbCI6InJvZHJpZ281QGVtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiXSwiY3JlYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxNzoyNC41MDRaIiwidXBkYXRlZEF0IjoiMjAyNC0wNi0xOVQxOToxNzoyNC41MDRaIiwiaWF0IjoxNzE4ODI0NjYyLCJleHAiOjE3MTg4MzQ2NjJ9.evW1jORfrIbKoBEDFgpC1dUsBbH6WKI552BgVYVBhNg
